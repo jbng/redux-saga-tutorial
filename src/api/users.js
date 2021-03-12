@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export const getUsers = () => {
-  return axios('/users', {
+  return axios('https://users.jbng.workers.dev', {
     params: {
       limit: 1000
     }
