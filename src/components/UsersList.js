@@ -4,8 +4,7 @@ import { ListGroup, ListGroupItem, Button } from 'reactstrap';
 const UsersList = ({ users, onDeleteUser }) => {
   return (
     <ListGroup>
-      {users
-        .sort((a, b) => {
+      {users?.sort((a, b) => {
           if (a.firstName > b.firstName) {
             return 1;
           } else if (a.firstName < b.firstName) {
